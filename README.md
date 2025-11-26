@@ -13,7 +13,7 @@
 ![reading message](img/5_mqtt_receive.png)
 * You can add a script to publish router info to the mqtt broker.
 ![create script](img/6_script.png)
-* run the script and get the result
+* Run the script and get the result
 ![run script](img/7_run_script.png)
 
 ```
@@ -49,6 +49,7 @@ iot mqtt publish broker=$broker topic=$topic message=$message
 # for debug purpose
 #:put $message
 ```
+
 
 
 

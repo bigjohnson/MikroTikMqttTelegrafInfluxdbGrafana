@@ -8,7 +8,7 @@
 * Go to System/Certificates and create one cert, if you have already create it you can skip this step.
 * Now you can select the cert on the Certificate Broker.
 * Test the mqtt broker connection publish something
-* You cann add a script to publish router info to the mqtt broker.
+* You can add a script to publish router info to the mqtt broker.
 
 ```
 ################################ Configuration ################################
@@ -43,5 +43,6 @@ iot mqtt publish broker=$broker topic=$topic message=$message
 # for debug purpose
 #:put $message
 ```
+
 
 

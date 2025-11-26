@@ -2,6 +2,7 @@
 ## original document https://help.mikrotik.com/docs/spaces/ROS/pages/46759978/MQTT
 
 * Install the iot package, from the System/Packages menu.
+![install package](img/1_packages.png)
 * The installation will restart the router.
 * In the IoT/MQTT menu add a broker.
 * If your broker has SSL you can enable it, but you need trust the root certificates for many common certificate authorities in the System/certificate/settings menu.
@@ -43,6 +44,7 @@ iot mqtt publish broker=$broker topic=$topic message=$message
 # for debug purpose
 #:put $message
 ```
+
 
 
 

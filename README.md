@@ -79,6 +79,10 @@ iot mqtt publish broker=$broker topic=$topic message=$message
 #:put $message
 ```
 
+and add it to the system/scheduler
+
+![scheduler](img/scheduler.png)
+
 # Telegraf
 
 add the file mikrotik.conf on the /etc/telegraf/telegraf.d/
@@ -1106,6 +1110,7 @@ https://grafana.panu.it/d/adq7pbn/routers?orgId=1&from=now-6h&to=now&timezone=br
   "version": 36
 }
 ```
+
 
 
 

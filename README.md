@@ -312,7 +312,7 @@ you can import my graph or create a new one, but you must setup your datasource
         "x": 0,
         "y": 5
       },
-      "id": 1,
+      "id": 7,
       "options": {
         "legend": {
           "calcs": [],
@@ -351,6 +351,8 @@ you can import my graph or create a new one, but you must setup your datasource
           "measurement": "mikrotik",
           "orderByTime": "ASC",
           "policy": "autogen",
+          "query": "SELECT non_negative_derivative(mean(\"WANrx\"), $__interval) AS \"rx\", non_negative_derivative(mean(\"WANtx\"), $__interval) AS \"tx\" FROM \"autogen\".\"mikrotik\" WHERE (\"location\"::tag = 'casa') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -522,6 +524,8 @@ you can import my graph or create a new one, but you must setup your datasource
           "measurement": "mikrotik",
           "orderByTime": "ASC",
           "policy": "autogen",
+          "query": "SELECT non_negative_derivative(mean(\"LANrx\"), $__interval) AS \"rx\", non_negative_derivative(mean(\"LANtx\"), $__interval) AS \"tx\" FROM \"autogen\".\"mikrotik\" WHERE (\"location\"::tag = 'casa') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -693,6 +697,8 @@ you can import my graph or create a new one, but you must setup your datasource
           "measurement": "mikrotik",
           "orderByTime": "ASC",
           "policy": "autogen",
+          "query": "SELECT non_negative_derivative(mean(\"BOXrx\"), $__interval) AS \"rx\", non_negative_derivative(mean(\"BOXtx\"), $__interval) AS \"tx\" FROM \"autogen\".\"mikrotik\" WHERE (\"location\"::tag = 'casa') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -864,6 +870,8 @@ you can import my graph or create a new one, but you must setup your datasource
           "measurement": "mikrotik",
           "orderByTime": "ASC",
           "policy": "autogen",
+          "query": "SELECT non_negative_derivative(mean(\"DEMILrx\"), $__interval) AS \"rx\", non_negative_derivative(mean(\"DEMILtx\"), $__interval) AS \"tx\" FROM \"autogen\".\"mikrotik\" WHERE (\"location\"::tag = 'casa') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -1035,6 +1043,8 @@ you can import my graph or create a new one, but you must setup your datasource
           "measurement": "mikrotik",
           "orderByTime": "ASC",
           "policy": "autogen",
+          "query": "SELECT non_negative_derivative(mean(\"wg1rx\"), $__interval) AS \"rx\", non_negative_derivative(mean(\"wg1rx\"), $__interval) AS \"tx\" FROM \"autogen\".\"mikrotik\" WHERE (\"location\"::tag = 'casa') AND $timeFilter GROUP BY time($__interval) fill(null)",
+          "rawQuery": true,
           "refId": "A",
           "resultFormat": "time_series",
           "select": [
@@ -1115,9 +1125,10 @@ you can import my graph or create a new one, but you must setup your datasource
   "timezone": "browser",
   "title": "Routers",
   "uid": "adq7pbn",
-  "version": 36
+  "version": 40
 }
 ```
+
 
 
 

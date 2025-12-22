@@ -117,6 +117,8 @@ https://grafana.panu.it/d/adq7pbn/routers?orgId=1&from=now-6h&to=now&timezone=br
 
 ![grafana](img/grafana.png)
 
+you can import my graph or create a new one, but you must setup your datasource
+
 ```
 {
   "annotations": {
@@ -1116,6 +1118,7 @@ https://grafana.panu.it/d/adq7pbn/routers?orgId=1&from=now-6h&to=now&timezone=br
   "version": 36
 }
 ```
+
 
 
 
